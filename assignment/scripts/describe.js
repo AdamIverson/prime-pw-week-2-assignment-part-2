@@ -26,12 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-//
-//
-//
-//
-
-//CODE
+//We create a variable called name and assign it the string value of 'Dane'.
+//If the variable name has a value of 'Mary', we will log 'Hi, Mary!'.
+//If the variable name has a value that is not 'Mary', we will log 'How do you do?'
+//Since name has a value of 'Dane' we console.log 'How do you do?'
 /*
 let name = 'Dane';
 
@@ -45,10 +43,10 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-//
-//
-//
-//
+//We create a variable named secret, then we create a variable named code and we set its value to 123
+//We write an if statement that will run if the value of code is equal to 123. If code is equal to 123, the variable secret
+//will have a value of 'super' and the value of code will be code times two. If the value of code is greater than 250, the value of secret will be
+//'duper'. Code has a value of 123, so we console.log 'super'.
 
 //CODE
 /*
@@ -70,11 +68,13 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-//
-//
-//
-//
-
+//We declare the variable isStudent and assign it the boolean value of true. We declare the variable age and assign it the number value of 34.
+//We declare the variable zip and assign it the number value of 55407. We write and if statement with two parameters, both of which must be true in
+//to run the code. The first parameter is that the value of isStudent must be true and the second parameter is that the zip has a value greater than 8000.
+//If both of these are met, we will log 'You're a student on the West Coast!'. If one of these parameters is not met, the code moves on to the next
+//option, which is that if the value of isStudent is false OR the value of age is less than 30, we will console.log 'What are your hobbies?'
+//If isStudent is true, we will log 'Welcome to Prime!' If none of the paramaters are met, we will log 'How about the weather?'
+//In this case, we would console.log 'Welcome to Prime!'
 //CODE
 /*
 let isStudent = true;
@@ -123,7 +123,7 @@ if (number >= 2) {
 
 */
 
-//TEST AS HECK 
+//TEST AS HECK
 
 //4. We start with three variables -- colorOne is set to 'blue' and
 // colorTwo is set to 'red', and mix is set to true. We check if mix is true
@@ -133,6 +133,10 @@ if (number >= 2) {
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
+
+//FIX - the values of colorOne and colorTwo are transposed and must be corrected.
+//In order to also set colorTwo to 'purple' if mix is true, we add one line of code that would read:
+//"colorTwo = 'purple';" in this case on line 143
 
 if (mix === true) {
   colorOne = 'purple';
@@ -147,6 +151,9 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
+//FIX - the operator || will run the code if either of the parameters is true
+// We change the pipes to &&, requiring both to be met in order to run the code.
+
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -159,6 +166,8 @@ if (temp > 39 || time >= 4) {
 /*
 let age = 21;
 const minAge = 21;
+
+//FIX - the console.logs are reversed. Change 'no entry' to 'entry' and 'no entry' to 'entry' and we're good to go.
 
 if(minAge <= age) {
   console.log('no entry');
